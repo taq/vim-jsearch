@@ -13,5 +13,5 @@ let g:loaded_jsearch = 1
 command! -nargs=0 ImportPackage call jsearch#ImportPackage()
 command! -nargs=0 InsertImport  call jsearch#InsertImport()
 
-noremap <C-P> :ImportPackage<CR>
-noremap <C-I> :InsertImport<CR>
+noremap <leader>jp :ImportPackage<CR>
+noremap <leader>ji :InsertImport<CR>

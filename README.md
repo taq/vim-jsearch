@@ -9,9 +9,8 @@ the current line with the package import statement of the class under cursor.
 
 ## Get import statement in place
 
-Just put the cursor under the class name and press `<C-P>`, the default mapping
-on normal mode. For example, if the word under the cursor is `BufferedReader`,
-when pressing `<C-P>`, the current line will be replaced with
+Just put the cursor under the class name and press `<leader>jp`, the default mapping on normal mode.
+For example, if the word under the cursor is `BufferedReader`, when pressing `<leader>jp`, the current line will be replaced with
 
 ```
 import java.io.BufferedReader;
@@ -19,9 +18,8 @@ import java.io.BufferedReader;
 
 ## Inserting import statement on the top of the file
 
-Will try to insert the import statement among other ones, on the correct order.
-Just put the cursor under the class name and press `<C-I>`, the default mapping
-on normal mode.
+Will try to insert the import statement among other ones (on the top of file), on the correct order.
+Just put the cursor under the class name and press `<leader>ji`, the default mapping on normal mode.
 
 ## Install
 
@@ -37,7 +35,7 @@ You can change the mapping to another one you want. The default mapping is set
 as:
 
 ```
-noremap <C-P> :ImportPackage<CR>
+noremap <leader>jp :ImportPackage<CR>
 ```
 
-Change `<C-P>` to any key combination you want.
+Change `<leader>jp` to any key combination you want.
